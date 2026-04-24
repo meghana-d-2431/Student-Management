@@ -13,9 +13,11 @@ public class StudentServiceImpl implements StudentService{
 
 	private final StudentRepository studentRepository;
 	
+	//Dependency injection provides the required repository to the service so it can handle database operations without creating it manually
 	public StudentServiceImpl(StudentRepository studentRepository) {
 		super();
-		this.studentRepository = studentRepository; // for services to interact with repository dependency injection
+		this.studentRepository = studentRepository;
+		// for services to interact with repository dependency injection 
 	}
 
 	@Override
