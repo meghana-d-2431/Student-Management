@@ -20,7 +20,7 @@ public class StudentServiceImpl implements StudentService{
 		// for services to interact with repository dependency injection 
 	}
 
-	@Override
+	@Override // method is overriding parent behavior
 	public List<Student> getAllStudents() {
 		return studentRepository.findAll();
 	}
